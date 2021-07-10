@@ -25,7 +25,7 @@ class App {
     }
 }
 const app = new App().app;
-const port = process.env.PORT;
+const port = process.env.PORT || 3020;
 app.listen(port, () => {
     console.log(`Server is running on port http://localhost:${port}`);
 });
